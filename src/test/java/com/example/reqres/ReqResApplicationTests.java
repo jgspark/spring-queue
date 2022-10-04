@@ -1,10 +1,10 @@
-package com.example.stock;
+package com.example.reqres;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class StockApiApplicationTests {
+class ReqResApplicationTests {
 
     @Test
     void contextLoads() {
