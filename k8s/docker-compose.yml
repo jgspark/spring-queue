@@ -1,0 +1,8 @@
+version: '1'
+services:
+  amqp:
+    container_name: amqp
+    image: arm64v8/rabbitmq
+    restart: always
+    ports:
+      - 15672:15672
