@@ -6,3 +6,5 @@ services:
     restart: always
     ports:
       - 15672:15672
+    command:
+      - rabbitmq-plugins enable --offline rabbitmq_mqtt rabbitmq_federation_management rabbitmq_stomp
