@@ -1,13 +1,13 @@
-package com.example.reqres;
+package com.example.messagingrabbitmq;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ReqResApplication {
+public class MessagingRabbitMQApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ReqResApplication.class, args);
+        SpringApplication.run(MessagingRabbitMQApplication.class, args);
     }
 
 }
