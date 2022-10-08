@@ -9,12 +9,12 @@ import java.util.stream.IntStream;
 
 @Slf4j
 @Component
-public class Runner implements CommandLineRunner {
+public class SamplePublisher implements CommandLineRunner {
     private static final String routingKey = "foo.bar.baz";
 
     private final RabbitTemplate rabbitTemplate;
 
-    public Runner(RabbitTemplate rabbitTemplate) {
+    public SamplePublisher(RabbitTemplate rabbitTemplate) {
         this.rabbitTemplate = rabbitTemplate;
     }
 
