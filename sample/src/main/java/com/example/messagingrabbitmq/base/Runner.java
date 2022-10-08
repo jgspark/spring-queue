@@ -1,4 +1,4 @@
-package com.example.messagingrabbitmq.code;
+package com.example.messagingrabbitmq.base;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -26,7 +26,7 @@ public class Runner implements CommandLineRunner {
                 .forEach(i -> {
                     CustomMessage message = new CustomMessage("hello message : " + i, i);
                     log.info("send message :{}", message);
-                    rabbitTemplate.convertAndSend(RabbitMaConfiguration.topicExchangeName, routingKey, message);
+                    rabbitTemplate.convertAndSend(BaseRabbitMqInfo.topicExchangeName, routingKey, message);
                 });
     }
 }
