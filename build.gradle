@@ -1,14 +1,15 @@
 buildscript {
     ext {
         springBootVersion = '2.7.4'
+        dependencyManagementVersion = '1.0.14.RELEASE'
     }
     repositories {
         maven { url 'https://repo.spring.io/release' }
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion")
-        classpath "io.spring.gradle:dependency-management-plugin:1.0.14.RELEASE"
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
+        classpath "io.spring.gradle:dependency-management-plugin:$dependencyManagementVersion"
     }
 }
 
@@ -44,15 +45,4 @@ subprojects {
     tasks.named('test') {
         useJUnitPlatform()
     }
-}
-
-project(":sample") {
-
-    dependencies {
-        implementation project(":cloud")
-        testImplementation project(":cloud")
-    }
-}
-
-project(":cloud") {
 }

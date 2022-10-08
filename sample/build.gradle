@@ -11,4 +11,6 @@ jar {
 }
 
 dependencies {
+    implementation project(":cloud")
+    testImplementation project(":cloud")
 }
