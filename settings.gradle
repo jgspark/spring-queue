@@ -1,1 +1,3 @@
-rootProject.name = 'req-res'
+rootProject.name = 'MessagingRabbitMQ'
+
+include('sample')
