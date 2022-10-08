@@ -46,4 +46,11 @@ subprojects {
 }
 
 project(":sample") {
+
+    dependencies {
+        implementation project(":cloud")
+    }
+}
+
+project(":cloud") {
 }
