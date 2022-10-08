@@ -1,39 +1,17 @@
 package com.example.messagingrabbitmq.sample;
 
+import lombok.*;
+
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
 public class CustomMessage {
     private String text;
+    private int index;
 
-    private int priority;
-
-    private boolean secret;
-
-    protected CustomMessage() {
-    }
-
-    public CustomMessage(String text, int priority, boolean secret) {
+    public CustomMessage(String text, int index) {
         this.text = text;
-        this.priority = priority;
-        this.secret = secret;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public int getPriority() {
-        return priority;
-    }
-
-    public boolean isSecret() {
-        return secret;
-    }
-
-    @Override
-    public String toString() {
-        return "CustomMessage{" +
-                "text='" + text + '\'' +
-                ", priority=" + priority +
-                ", secret=" + secret +
-                '}';
+        this.index = index;
     }
 }
