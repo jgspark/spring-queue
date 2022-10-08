@@ -1,4 +1,4 @@
-package com.example.messagingrabbitmq.sample;
+package com.example.messagingrabbitmq.code;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
