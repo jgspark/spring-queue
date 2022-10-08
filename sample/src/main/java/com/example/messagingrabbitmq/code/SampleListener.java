@@ -10,6 +10,6 @@ public class SampleListener {
 
     @RabbitListener(queues = RabbitMaConfiguration.queueName)
     public void receiveMessage(CustomMessage message) {
-        log.info("get message : {}" , message);
+        log.info("get message : {}", message);
     }
 }
