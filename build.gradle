@@ -49,6 +49,7 @@ project(":sample") {
 
     dependencies {
         implementation project(":cloud")
+        testImplementation project(":cloud")
     }
 }
 
