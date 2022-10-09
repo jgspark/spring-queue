@@ -1,4 +1,4 @@
-package com.example.messagingrabbitmq.emailsend;
+package com.example.messagingrabbitmq.queue;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;

@@ -1,6 +1,7 @@
 package com.example.messagingrabbitmq.emailsend;
 
 import com.example.messagingrabbitmq.emailsend.dto.EmailBulkSendDTO;
+import com.example.messagingrabbitmq.queue.EmailQueueInfo;
 import com.example.messagingrabbitmq.user.OnlyEmail;
 import com.example.messagingrabbitmq.user.UserService;
 import lombok.RequiredArgsConstructor;
