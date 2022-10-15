@@ -1,14 +1,15 @@
 buildscript {
     ext {
         springBootVersion = '2.7.4'
+        dependencyManagementVersion = '1.0.14.RELEASE'
     }
     repositories {
         maven { url 'https://repo.spring.io/release' }
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion")
-        classpath "io.spring.gradle:dependency-management-plugin:1.0.14.RELEASE"
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
+        classpath "io.spring.gradle:dependency-management-plugin:$dependencyManagementVersion"
     }
 }
 
@@ -38,12 +39,10 @@ subprojects {
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
         testImplementation 'org.springframework.amqp:spring-rabbit-test'
         implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.0-rc1'
+        testImplementation('com.github.fridujo:rabbitmq-mock:1.1.1')
     }
 
     tasks.named('test') {
         useJUnitPlatform()
     }
-}
-
-project(":sample") {
 }
