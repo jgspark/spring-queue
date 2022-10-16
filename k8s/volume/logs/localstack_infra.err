@@ -1,0 +1,2 @@
+2022-10-16T02:35:16.593  INFO --- [-99 (worker)] l.services.install         : Downloading and installing local ElasticMQ server. This may take some time.
+2022-10-16T02:35:29.640  INFO --- [  MainThread] localstack.utils.bootstrap : Execution of "prepare_installation" took 13125.64ms
