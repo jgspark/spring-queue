@@ -1,2 +1,8 @@
-2022-10-16T02:35:16.593  INFO --- [-99 (worker)] l.services.install         : Downloading and installing local ElasticMQ server. This may take some time.
-2022-10-16T02:35:29.640  INFO --- [  MainThread] localstack.utils.bootstrap : Execution of "prepare_installation" took 13125.64ms
+2022-10-18T12:25:43.347  INFO --- [  MainThread] localstack.utils.bootstrap : Execution of "prepare_installation" took 20909.09ms
+2022-10-18T12:25:44.706  WARN --- [-functhread5] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2022-10-18T12:25:44.706  WARN --- [-functhread5] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2022-10-18T12:25:44.711  INFO --- [-functhread5] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2022-10-18T12:25:44.711  INFO --- [-functhread5] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2022-10-18T12:25:44.788  INFO --- [  MainThread] localstack.utils.bootstrap : Execution of "start_runtime_components" took 1441.09ms
+2022-10-18T12:32:15.630  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-10-18T12:54:51.862  INFO --- [   asgi_gw_0] localstack.request.http    : POST /000000000000/testQueue => 200

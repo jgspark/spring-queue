@@ -1,0 +1,4 @@
+test-user:
+  region: us-east-1
+  access-key-id: testUser
+  secret-access-key: testAccessKey
