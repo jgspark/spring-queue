@@ -1,31 +1,31 @@
 version: '3.3'
 services:
-  amqp:
-    #http://0.0.0.0:15672/#/
-    container_name: amqp
-    image: rabbitmq:management
-    ports:
-      - "5672:5672"
-      - "15672:15672"
-    environment:
-      RABBITMQ_DEFAULT_USER: root
-      RABBITMQ_DEFAULT_PASS: 1234
-  db1:
-    image: arm64v8/mariadb
-    restart: always
-    ports:
-      - "33306:3306"
-    environment:
-      TZ: Asia/Seoul
-      MYSQL_ROOT_PASSWORD: 1234
-      MYSQL_DATABASE: default
-      MYSQL_USER: default
-      MYSQL_PASSWORD: 1234
-    container_name: "spring_db1"
-    volumes:
-      - ./db1/maria:/var/lib/mysqlysql
-      # init.sql
-      - ./db1/sql:/docker-entrypoint-initdb.d
+  #  amqp:
+  #    #http://0.0.0.0:15672/#/
+  #    container_name: amqp
+  #    image: rabbitmq:management
+  #    ports:
+  #      - "5672:5672"
+  #      - "15672:15672"
+  #    environment:
+  #      RABBITMQ_DEFAULT_USER: root
+  #      RABBITMQ_DEFAULT_PASS: 1234
+  #  db1:
+  #    image: arm64v8/mariadb
+  #    restart: always
+  #    ports:
+  #      - "33306:3306"
+  #    environment:
+  #      TZ: Asia/Seoul
+  #      MYSQL_ROOT_PASSWORD: 1234
+  #      MYSQL_DATABASE: default
+  #      MYSQL_USER: default
+  #      MYSQL_PASSWORD: 1234
+  #    container_name: "spring_db1"
+  #    volumes:
+  #      - ./db1/maria:/var/lib/mysqlysql
+  #      # init.sql
+  #      - ./db1/sql:/docker-entrypoint-initdb.d
   localstack:
     container_name: "${LOCALSTACK_DOCKER_NAME-localstack_main}"
     image: localstack/localstack:latest-arm64
