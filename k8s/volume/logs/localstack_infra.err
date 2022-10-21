@@ -1,8 +1,19 @@
-2022-10-18T12:25:43.347  INFO --- [  MainThread] localstack.utils.bootstrap : Execution of "prepare_installation" took 20909.09ms
-2022-10-18T12:25:44.706  WARN --- [-functhread5] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
-2022-10-18T12:25:44.706  WARN --- [-functhread5] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
-2022-10-18T12:25:44.711  INFO --- [-functhread5] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
-2022-10-18T12:25:44.711  INFO --- [-functhread5] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
-2022-10-18T12:25:44.788  INFO --- [  MainThread] localstack.utils.bootstrap : Execution of "start_runtime_components" took 1441.09ms
-2022-10-18T12:32:15.630  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
-2022-10-18T12:54:51.862  INFO --- [   asgi_gw_0] localstack.request.http    : POST /000000000000/testQueue => 200
+2022-10-21T05:57:49.447  INFO --- [  MainThread] localstack.utils.bootstrap : Execution of "prepare_installation" took 72347.39ms
+2022-10-21T05:57:50.861  WARN --- [-functhread5] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2022-10-21T05:57:50.861  WARN --- [-functhread5] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2022-10-21T05:57:50.871  INFO --- [-functhread5] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2022-10-21T05:57:50.871  INFO --- [-functhread5] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2022-10-21T05:57:50.955  INFO --- [  MainThread] localstack.utils.bootstrap : Execution of "start_runtime_components" took 1508.34ms
+2022-10-21T05:58:37.521  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.CreateQueue => 200
+2022-10-21T06:07:54.187  INFO --- [   asgi_gw_0] localstack.request.http    : POST /000000000000/testQueue => 200
+2022-10-21T06:08:11.486  INFO --- [   asgi_gw_0] localstack.request.http    : POST /000000000000/testQueue => 200
+2022-10-21T06:08:17.671  INFO --- [   asgi_gw_0] localstack.request.http    : POST /000000000000/testQueue => 200
+2022-10-21T06:10:50.120  INFO --- [   asgi_gw_1] localstack.request.http    : POST /000000000000/testQueue => 200
+2022-10-21T06:10:57.101  INFO --- [   asgi_gw_1] localstack.request.http    : POST /000000000000/testQueue => 200
+2022-10-21T06:11:47.136  INFO --- [   asgi_gw_1] localstack.request.http    : POST /000000000000/testQueue => 200
+2022-10-21T06:20:21.263  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.ListQueues => 200
+2022-10-21T06:21:08.665  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.GetQueueAttributes => 200
+2022-10-21T06:23:06.963  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.GetQueueAttributes => 200
+2022-10-21T06:25:52.795  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS sqs.GetQueueAttributes => 200
+2022-10-21T06:27:43.201  INFO --- [   asgi_gw_1] localstack.request.http    : POST /000000000000/testQueue => 200
+2022-10-21T06:27:49.390  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS sqs.GetQueueAttributes => 200
