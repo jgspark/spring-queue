@@ -1,4 +1,4 @@
-package com.example.messagingrabbitmq.queue;
+package com.example.messagingrabbitmq.aws;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
@@ -16,11 +16,11 @@ public class EmailQueueInfo {
 
     @Bean
     public Queue queue() {
-        return new Queue(queueName , false);
+        return new Queue(queueName, false);
     }
 
     @Bean
-    public TopicExchange exchange(){
+    public TopicExchange exchange() {
         return new TopicExchange(topicExchangeName);
     }
 

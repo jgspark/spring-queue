@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+/k8s/volume/logs/
+/k8s/volume/cache/
+/k8s/volume/lib/
