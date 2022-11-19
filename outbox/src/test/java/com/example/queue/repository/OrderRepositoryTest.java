@@ -19,7 +19,7 @@ class OrderRepositoryTest {
     @Test
     public void create_success() {
 
-        Order mock = Order.builder()
+        Order mock = Order.createdBuilder()
                 .name("test")
                 .build();
 
