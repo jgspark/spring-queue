@@ -5,6 +5,7 @@ import com.example.queue.service.dto.OrderCreatedDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,7 +19,7 @@ public class OrderController {
     private final OrderCreatedService orderCreatedService;
 
     @PostMapping
-    public ResponseEntity<OrderCreatedDTO.Response> created(OrderCreatedDTO.Request dto) {
+    public ResponseEntity<OrderCreatedDTO.Response> created(@RequestBody OrderCreatedDTO.Request dto) {
         Optional<OrderCreatedDTO.Response> optional = orderCreatedService.created(dto);
         if (optional.isEmpty()) {
             return ResponseEntity.noContent().build();
