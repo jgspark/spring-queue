@@ -2,6 +2,5 @@ rootProject.name = 'queue'
 
 include('sample',
         'cloud',
-        'email-service',
         'queue-service',
         'outbox')
