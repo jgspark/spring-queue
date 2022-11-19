@@ -7,8 +7,8 @@ import javax.persistence.*;
 @Getter
 @Table
 @Entity(name = "orders")
+@AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Order {
 
     @Id
