@@ -3,3 +3,9 @@ spring:
     url: jdbc:mysql://localhost:4444/default
     username: default
     password: 1234
+    driver-class-name: com.mysql.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
