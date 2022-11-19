@@ -18,7 +18,7 @@ public class Order {
     @Column(nullable = true)
     private String name;
 
-    @Builder
+    @Builder(builderMethodName = "createdBuilder")
     private Order(String name) {
         this.name = name;
     }
