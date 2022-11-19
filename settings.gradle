@@ -1,6 +1,6 @@
 rootProject.name = 'queue'
 
-include('sample',
+include('rabbitmq',
         'cloud',
-        'queue-service',
+        'sqs',
         'outbox')
